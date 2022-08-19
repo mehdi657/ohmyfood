@@ -1,0 +1,203 @@
+@import "./variables";
+@import "./placeholders";
+@import "./mixins";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    img{
+        width: 45%;
+    }
+}
+
+.reserv{
+    background-color: $greyc;
+    height: 450px;
+    .fa-solid{
+        margin-right: 30px;
+    }
+    .ville{
+        background-color: $greyf;
+        height: 15%;
+        font-size: 1.3em;
+        font-weight: bold;
+        @extend %flex-center;
+    }
+    .info{
+        height: 85%;
+        @include flex(flex, column, nowrap, center, center);
+        h2{
+            font-size: 2em;
+            font-weight: 900;
+            width: 70%;
+            margin-top: 0;
+        }
+        p{
+            font-size: 1.5em;
+            width: 90%;
+            margin-top: 0;
+        }
+        .btn{
+            font-size: 1.3em;
+            width: 50%;
+            height: 60px;
+            background-color: $color-primary;
+            background-image: linear-gradient($color-secondary, $color-primary);
+            color: white;
+            border-radius: 30px;
+            @extend %shadow;
+        }
+    }
+}
+
+     /**foctionnement**/
+
+.fonct{
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    h2{
+        padding-top: 50px;
+        text-align: left;
+        font-size: 2.2em;
+    }
+    ol{
+        @include flex(flex, column, nowrap, space-around, center);
+        width: 100%;
+        height: 70%;
+        margin: auto;
+        padding: 0;
+        counter-reset: repas;
+    }
+    li{
+        counter-increment: repas;
+        height: 80px;
+        width: 100%;
+        background-color: $greyc;
+        text-align: left;
+        font-size: 1.2em;
+        font-weight: 600;
+        padding-top: 10px;
+        border-radius: 25px;
+        @extend %shadow;
+        &:hover{
+            background-color: #f1e7ff;
+            .fa-solid{
+                color: $color-primary;
+            }
+        }
+        &:before{
+            content: counter(repas);
+            background-color: $color-primary;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 50px;
+            position: relative;
+            right: 7px;
+        }
+        .fa-solid{
+            padding: 20px 30px;
+            font-size: 1.2em;
+        }       
+    }
+}
+
+                /**restaurants**/
+
+.restau{
+    background-color: $greyc;
+    height: 1700px;
+    h2{
+        padding-top: 75px;
+        text-align: left;
+        font-size: 2em;
+        width: 90%;
+        margin: auto;
+    }
+    aside{
+        width: 90%;
+        height: 350px;
+        margin: 25px;
+        border-radius: 25px;
+        @extend %shadow;
+    }
+    .image{
+        height: 70%;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 25px 25px 0 0;
+        }
+    }
+    span{
+        background-color: $color-tertiary;
+        padding: 10px;
+        position: relative;
+        bottom: 220px;
+        left: 170px;
+        border-radius: 5px;
+    }
+    &__info{
+        @include flex(flex, row, nowrap, space-between, center);
+        text-align: left;
+        background-color: white;
+        padding: 20px;
+        border-radius: 0 0 25px 25px;
+        font-size: 1.5em;
+        height: 30%;
+    }
+    h3, p{
+        margin: 0
+    }
+    .fa-regular:hover{
+        background-color: $color-primary;
+    }
+}
+
+                /**footer**/
+
+footer{
+    background-color: black;
+    height: 250px;
+    @include flex(flex, column, nowrap, center, flex-start);
+    h2{
+        margin: 35px 0 0 25px;
+        height: 20%;
+    }
+    img{
+        filter: invert(100%);
+    }
+    ul{
+        @include flex(flex, column, nowrap, space-between, flex-start);
+        height: 70%;
+        font-size: 1.4em;
+        padding-left: 25px;
+    }
+    a{
+        color: white;
+    }
+    .fa-solid{
+        width: 15px;
+        margin-right: 25px;
+    }
+}
+
+
+
