@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>ohmyfood . Le délice des sens</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>ohmyfood/Le délice des sens</title>
 </head>
 <body>
     <header>
@@ -19,156 +19,163 @@
             <img src="/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
         </h1>
     </header>
-    <main>
+    <div class="delice">
+    </div>
+    <main class="menus">
         <h2>
-            Le délice des sens
+            <p>Le délice des sens</p><span><i class="fa-regular fa-heart"></i></span>
         </h2>    
                             <!--entrees-->
-        <section>
+        <section class="plat">
             <h4>
                 ENTRÉES
             </h4>
             <aside>
-                <h3>
-                    Tartare de thon
-                </h3>
                 <div>
+                    <h3>
+                        Tartare de thon
+                    </h3>
                     <p>
                         Assaisonné au yuzu
                     </p>
+                </div>
                 <span>
                     <b>25€</b>
                 </span>
-                </div>
             </aside>
             <aside>
-                <h3>
-                    Bouchée de homard croustillant
-                </h3>
                 <div>
+                    <h3>
+                        Bouchée de homard croustillant
+                    </h3>
                     <p>
                         Et sa farandole de petits légumes
                     </p>
+                </div>
                 <span>
                     <b>35€</b>
                 </span>
-                </div>
             </aside>
             <aside>
-                <h3>
-                    Velouté de cèpes 
-                </h3>
                 <div>
+                    <h3>
+                        Velouté de cèpes 
+                    </h3>
                     <p>
                         Aux truffes
                     </p>
+                </div>
                 <span>
                     <b>20€</b>
                 </span>
-                </div>
             </aside>
         </section>
                                         <!--plats-->
-        <section>
+        <section class="plat">
             <h4>
                 PLATS
             </h4>
             <aside>
-                <h3>
-                    Poulet rôti aux herbes de Provence
-                </h3>
                 <div>
+                    <h3>
+                        Poulet rôti aux herbes de Provence
+                    </h3>
                     <p>
                         Et sa crème de truffe
                     </p>
+                </div>
                 <span>
                     <b>40€</b>
                 </span>
-                </div>
             </aside>
             <aside>
-                <h3>
-                    Langouste rôtie 
-                </h3>
                 <div>
+                    <h3>
+                        Langouste rôtie 
+                    </h3>
                     <p>
                         Et ses légumes de saison
                     </p>
+                </div>
                 <span>
                     <b>35€</b>
                 </span>
-                </div>
             </aside>
             <aside>
-                <h3>
-                    Côte de boeuf Angus 
-                </h3>
                 <div>
+                    <h3>
+                        Côte de boeuf Angus 
+                    </h3>
                     <p>
                         Et sa purée de panais
                     </p>
+                </div>
                 <span>
                     <b>44€</b>
                 </span>
-                </div>
             </aside>
         </section>
                                             <!--desserts-->
-        <section>
+        <section class="plat">
             <h4>
                 DESSERTS
             </h4>
             <aside>
-                <h3>
-                    Farandole de desserts
-                </h3>
                 <div>
+                    <h3>
+                        Farandole de desserts
+                    </h3>
                     <p>
                         Du chef
                     </p>
+                </div>
                 <span>
                     <b>18€</b>
                 </span>
-                </div>
             </aside>
             <aside>
-                <h3>
-                    Crème brulée
-                </h3>
                 <div>
+                    <h3>
+                        Crème brulée
+                    </h3>
                     <p>
                         Revisitée
                     </p>
+                </div>
                 <span>
                     <b>22€</b>
                 </span>
-                </div>
             </aside>
             <aside>
-                <h3>
-                    Tiramisu
-                </h3>
                 <div>
+                    <h3>
+                        Tiramisu
+                    </h3>
                     <p>
                         À la noisette
                     </p>
+                </div>
                 <span>
                     <b>23€</b>
                 </span>
-                </div>
             </aside>
         </section>
         <input type="submit" class="btn" value="Commander" />
     </main>
+
+                            <!-- footer -->
+
     <footer>
         <h2>
-            <img src="/images/logo/ohmyfood.png" alt="ohmyfood">
+            <a href="#logo">
+                <img src="/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+            </a>
         </h2>
         <ul>
-            <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
-            <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li>Contact</li>
+            <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+            <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="mailto:ohmyfood@contact.fr">Contact</a></li>
         </ul>
     </footer>
 </body>

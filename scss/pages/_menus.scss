@@ -1,0 +1,63 @@
+.menus{
+    @include flex(flex, column, nowrap, space-between, center);
+    background-color: $greyc;
+    width: 100%;
+    padding-bottom: 80px;
+    h2{
+        font-family: 'Shrikhand', cursive;
+        @include flex(flex, row, nowrap, space-around, flex-end);
+        width: 100%;
+        height: 90px;
+        margin: 0;
+        font-size: 2.2em;
+        position: relative;
+        bottom: 70px;
+        background-color: $greyc;
+        border-radius: 60px 60px 0 0;
+        p{
+            margin: 0;
+        }
+    }
+}
+.plat{
+    @include flex(flex, column, nowrap, space-between, flex-start);
+    width: 85%;
+    margin: 20px auto;
+    position: relative;
+    bottom: 50px;
+    h4{
+        font-size: 1.5em;
+        font-weight: 500;
+        margin: 0 0 15px 5px;
+    }
+    aside{
+        @include flex(flex, row, nowrap, space-between, flex-end);
+        @extend %shadow;
+        background-color: white;
+        width: 100%;
+        height: 90px;
+        margin: 10px 0;
+        border-radius: 25px;
+    }
+    div{
+        @include flex(flex, column, nowrap, center, flex-start);
+        width: 80%;
+        height: 80px;
+        margin-left: 20px;
+    }
+    h3{
+        text-align: left;
+        margin: 3px;
+        font-size: 1.4em;
+    }
+    p{
+        @include ellipsis;
+        width: 85%;
+        margin: 3px;
+        font-size: 1.2em;
+    }
+    span{
+        font-size: large;
+        margin: 0 25px 13px 0;
+    }
+}

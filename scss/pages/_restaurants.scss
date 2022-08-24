@@ -1,0 +1,46 @@
+.restau{
+    background-color: $greyc;
+    height: 1700px;
+    h2{
+        padding-top: 75px;
+        text-align: left;
+        font-size: 2em;
+        width: 90%;
+        margin: auto;
+    }
+    aside{
+        width: 90%;
+        height: 350px;
+        margin: 25px;
+        border-radius: 25px;
+        @extend %shadow;
+    }
+    .image{
+        height: 70%;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 25px 25px 0 0;
+    }
+    span{
+        background-color: $color-tertiary;
+        padding: 10px;
+        position: relative;
+        bottom: 220px;
+        left: 170px;
+        border-radius: 5px;
+    }
+    &__info{
+        @include flex(flex, row, nowrap, space-between, center);
+        text-align: left;
+        background-color: white;
+        padding: 20px;
+        border-radius: 0 0 25px 25px;
+        font-size: 1.5em;
+        height: 30%;
+    }
+    h3, p{
+        margin: 0
+    }
+}

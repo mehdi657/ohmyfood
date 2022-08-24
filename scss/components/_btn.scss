@@ -1,0 +1,10 @@
+.btn{
+    font-size: 1.3em;
+    width: 50%;
+    height: 60px;
+    border: none;
+    background-image: linear-gradient( $color-secondary, $color-primary);
+    color: white;
+    border-radius: 30px;
+    @extend %shadow;
+}

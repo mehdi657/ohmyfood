@@ -1,0 +1,12 @@
+.palette{
+    @include palette-du-gout;
+}
+.note{
+    @include note-enchantee;
+}
+.française{
+    @include francaise;
+}
+.delice{
+    @include delice-des-sens;
+}
