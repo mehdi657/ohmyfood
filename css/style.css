@@ -1,11 +1,10 @@
-@charset "UTF-8";
 .reserv__ville {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.plat aside, .restau aside, .fonct li, .btn {
+.restau aside, .fonct li, .btn {
   box-shadow: 0px 8px 3px #eaeaea;
 }
 
@@ -221,119 +220,27 @@ footer .fa-solid {
   font-size: 1.5em;
   height: 30%;
 }
-.restau h3, .restau p {
+
+.coeur {
+  height: 100%;
   margin: 0;
+  padding: 0;
+  transition: background-color 1s;
 }
 
-.palette {
-  background: url("../images/restaurants/palette-du-goût.jpg") scroll no-repeat;
-  width: 100%;
-  height: 350px;
-  background-size: 100% 350px;
+.restau:hover .coeur {
+  animation: enter 2S ease-in-out;
 }
 
-.note {
-  background: url("../images/restaurants/note-enchantée.jpg") scroll no-repeat;
-  width: 100%;
-  height: 350px;
-  background-size: 100% 350px;
-}
-
-.française {
-  background: url("../images/restaurants/française.jpg") scroll no-repeat;
-  width: 100%;
-  height: 350px;
-  background-size: 100% 350px;
-}
-
-.delice {
-  background: url("../images/restaurants/délice-des-sens.jpg") scroll no-repeat;
-  width: 100%;
-  height: 350px;
-  background-size: 100% 350px;
-}
-
-.menus {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f6f6f6;
-  width: 100%;
-  padding-bottom: 80px;
-}
-.menus h2 {
-  font-family: "Shrikhand", cursive;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: flex-end;
-  width: 100%;
-  height: 90px;
-  margin: 0;
-  font-size: 2.2em;
-  position: relative;
-  bottom: 70px;
-  background-color: #f6f6f6;
-  border-radius: 60px 60px 0 0;
-}
-.menus h2 p {
-  margin: 0;
-}
-
-.plat {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 85%;
-  margin: 20px auto;
-  position: relative;
-  bottom: 50px;
-}
-.plat h4 {
-  font-size: 1.5em;
-  font-weight: 500;
-  margin: 0 0 15px 5px;
-}
-.plat aside {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: flex-end;
-  background-color: white;
-  width: 100%;
-  height: 90px;
-  margin: 10px 0;
-  border-radius: 25px;
-}
-.plat div {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-start;
-  width: 80%;
-  height: 80px;
-  margin-left: 20px;
-}
-.plat h3 {
-  text-align: left;
-  margin: 3px;
-  font-size: 1.4em;
-}
-.plat p {
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: left;
-  width: 85%;
-  margin: 3px;
-  font-size: 1.2em;
-}
-.plat span {
-  font-size: large;
-  margin: 0 25px 13px 0;
+@keyframes enter {
+  from {
+    color: white;
+    margin-top: 100%;
+  }
+  to {
+    color: #9356DC;
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

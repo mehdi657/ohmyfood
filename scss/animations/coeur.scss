@@ -1,0 +1,21 @@
+.coeur{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    transition: background-color 1s;
+}
+.restau:hover .coeur{
+    animation: enter 2S ease-in-out; 
+    
+       
+}    
+@keyframes enter{
+    from{
+        color: white;
+        margin-top: 100%;
+    }
+    to{
+        color: $color-primary;
+        margin-top: 0;
+    }
+}
