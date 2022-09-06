@@ -196,4 +196,27 @@ footer .fa-solid {
   margin: 0 25px 13px 0;
 }
 
+@keyframes deplacement {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.plat aside {
+  animation: deplacement 2s ease-in-out;
+}
+.plat aside {
+  animation: deplacement 2s ease-in-out 100ms;
+}
+.plat .plat3 {
+  animation: deplacement 2s ease-in-out 200ms;
+}
+.plat .plat4 {
+  animation: deplacement 2s ease-in-out 200ms;
+}
+
 /*# sourceMappingURL=page.css.map */
