@@ -81,13 +81,16 @@ footer .fa-solid {
 }
 
 .btn {
-  font-size: 1.3em;
+  font-size: 1.2em;
   width: 50%;
   height: 60px;
   border: none;
   background-image: linear-gradient(#FF79DA, #9356DC);
   color: white;
   border-radius: 30px;
+}
+.btn:hover {
+  opacity: 0.8;
 }
 
 .reserv {
@@ -177,10 +180,9 @@ footer .fa-solid {
 
 .restau {
   background-color: #f6f6f6;
-  height: 1700px;
 }
 .restau h2 {
-  padding-top: 75px;
+  padding: 70px 0;
   text-align: left;
   font-size: 2em;
   width: 90%;
@@ -202,10 +204,10 @@ footer .fa-solid {
 }
 .restau span {
   background-color: #99E2D0;
-  padding: 10px;
+  padding: 5px;
   position: relative;
-  bottom: 220px;
-  left: 170px;
+  bottom: 90%;
+  left: 40%;
   border-radius: 5px;
 }
 .restau__info {
@@ -220,26 +222,55 @@ footer .fa-solid {
   font-size: 1.5em;
   height: 30%;
 }
-
-.coeur {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  transition: background-color 1s;
+.restau .coeurs {
+  position: relative;
+}
+.restau .coeurs .fa-heart {
+  position: absolute;
+  right: 10px;
+}
+.restau .coeurs .fa-solid {
+  color: white;
+  font-size: 0.8em;
+  right: 12px;
+  top: 3px;
 }
 
-.restau:hover .coeur {
-  animation: enter 2S ease-in-out;
-}
-
-@keyframes enter {
+@keyframes coeur {
   from {
-    color: white;
-    margin-top: 100%;
+    opacity: 0;
   }
   to {
+    opacity: 1;
     color: #9356DC;
-    margin-top: 0;
+  }
+}
+.fa-heart {
+  transition: all 1s;
+}
+.fa-heart:hover {
+  animation: coeur 1S ease-out forwards;
+}
+
+@media screen and (min-width: 900px) {
+  .restau {
+    height: 100%;
+  }
+  .restau h2 {
+    margin-left: 95px;
+    padding-bottom: 0;
+  }
+  .restau .annrestau {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+  }
+  .restau .annrestau aside {
+    width: 43%;
   }
 }
 

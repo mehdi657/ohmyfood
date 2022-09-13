@@ -1,21 +1,15 @@
-.coeur{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    transition: background-color 1s;
-}
-.restau:hover .coeur{
-    animation: enter 2S ease-in-out; 
-    
-       
-}    
-@keyframes enter{
+@keyframes coeur{
     from{
-        color: white;
-        margin-top: 100%;
+        opacity: 0;
     }
     to{
+        opacity: 1;
         color: $color-primary;
-        margin-top: 0;
+    }
+}
+.fa-heart{
+    transition: all 1s;
+    &:hover {
+        animation: coeur 1S ease-out forwards; 
     }
 }

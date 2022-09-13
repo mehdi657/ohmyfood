@@ -1,5 +1,5 @@
 .btn{
-    font-size: 1.3em;
+    font-size: 1.2em;
     width: 50%;
     height: 60px;
     border: none;
@@ -7,4 +7,7 @@
     color: white;
     border-radius: 30px;
     @extend %shadow;
+    &:hover{
+        opacity: 0.8;
+    }
 }

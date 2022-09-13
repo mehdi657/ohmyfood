@@ -17,6 +17,20 @@
         p{
             margin: 0;
         }
+        .coeurs{
+            position: relative;
+            .fa-heart{
+                position: absolute;
+                right: 0px; 
+                bottom: 13px;           
+            }
+            .fa-solid{
+                color: white;
+                font-size: 29px;
+                right: 3px;
+                bottom: 17px;
+            }
+        }
     }
 }
 .plat{
@@ -33,31 +47,55 @@
     aside{
         @include flex(flex, row, nowrap, space-between, flex-end);
         @extend %shadow;
+        @include ellipsis;
+        cursor: pointer;
         background-color: white;
         width: 100%;
         height: 90px;
         margin: 10px 0;
         border-radius: 25px;
     }
-    div{
+    &__titre{
         @include flex(flex, column, nowrap, center, flex-start);
-        width: 80%;
-        height: 80px;
+        flex-grow: 1;
+        width: 70%;
         margin-left: 20px;
+        height: 80px;
     }
     h3{
-        text-align: left;
+        @include ellipsis;
         margin: 3px;
         font-size: 1.4em;
     }
     p{
         @include ellipsis;
-        width: 85%;
         margin: 3px;
         font-size: 1.2em;
     }
-    span{
+    &__prix{
         font-size: large;
         margin: 0 25px 13px 0;
+    }
+    .check{
+        display: none;
+        position: relative;
+        width: 20%;
+        height: 100%;
+        &__box{
+            background-color: $color-tertiary;
+            position: absolute;
+            border-radius: 0 25px 25px 0;
+            width: 100%;
+            height: 100%;
+        }
+        &__sign{
+            display: block;
+            position: absolute;
+            color: white;
+            font-size: 1.8em;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
     }
 }

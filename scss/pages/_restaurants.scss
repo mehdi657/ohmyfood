@@ -1,8 +1,8 @@
 .restau{
     background-color: $greyc;
-    height: 1700px;
+    
     h2{
-        padding-top: 75px;
+        padding: 70px 0;
         text-align: left;
         font-size: 2em;
         width: 90%;
@@ -25,10 +25,10 @@
     }
     span{
         background-color: $color-tertiary;
-        padding: 10px;
+        padding: 5px;
         position: relative;
-        bottom: 220px;
-        left: 170px;
+        bottom: 90%;
+        left: 40%;
         border-radius: 5px;
     }
     &__info{
@@ -39,5 +39,18 @@
         border-radius: 0 0 25px 25px;
         font-size: 1.5em;
         height: 30%;
+    }
+    .coeurs{
+        position: relative;
+        .fa-heart{
+            position: absolute;
+            right: 10px;            
+        }
+        .fa-solid{
+            color: white;
+            font-size: 0.8em;
+            right: 12px;
+            top: 3px;
+        }
     }
 }

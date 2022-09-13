@@ -1,0 +1,23 @@
+@keyframes enter{
+    from{
+        transform-origin: right;
+        transform: translateX(100%)
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+
+.plat{
+    aside:hover .check{
+        display: block;
+        animation: enter 700ms ease-in-out;
+        
+    }
+    .check__sign{
+        
+    }
+    
+    
+}
