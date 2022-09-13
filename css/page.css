@@ -3,6 +3,10 @@
   box-shadow: 0px 8px 3px #eaeaea;
 }
 
+.btn:hover {
+  box-shadow: 5px 15px 3px #cecece;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -198,7 +202,7 @@ footer .fa-solid {
   justify-content: center;
   align-items: flex-start;
   flex-grow: 1;
-  width: 70%;
+  width: 40%;
   margin-left: 20px;
   height: 80px;
 }
@@ -242,9 +246,8 @@ footer .fa-solid {
   position: absolute;
   color: white;
   font-size: 1.8em;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 40%;
 }
 
 @keyframes coeur {
@@ -295,15 +298,34 @@ footer .fa-solid {
     transform: translateX(0%);
   }
 }
+@keyframes rotat {
+  from {
+    transform: rotate(-1turn);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
 .plat aside:hover .check {
   display: block;
   animation: enter 700ms ease-in-out;
 }
+.plat .check__sign {
+  animation: rotat 700ms linear;
+}
+
 @media screen and (min-width: 900px) {
   .palette, .note, .française, .delice {
     width: 100%;
     height: 500px;
     background-size: 100% 500px;
+  }
+}
+@media screen and (min-width: 1196px) {
+  .palette, .note, .française, .delice {
+    width: 100%;
+    height: 600px;
+    background-size: 100% 600px;
   }
 }
 

@@ -9,5 +9,6 @@
     @extend %shadow;
     &:hover{
         opacity: 0.8;
+        @extend %shadow2;
     }
 }

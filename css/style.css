@@ -8,6 +8,10 @@
   box-shadow: 0px 8px 3px #eaeaea;
 }
 
+.btn:hover {
+  box-shadow: 5px 15px 3px #cecece;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -255,7 +259,7 @@ h1 {
   color: white;
   font-size: 0.8em;
   right: 12px;
-  top: 3px;
+  top: 2px;
 }
 
 @keyframes coeur {
