@@ -42,6 +42,8 @@ header span {
 }
 header h1 {
   margin: 20px auto;
+  padding: 20px;
+  border-radius: 50px;
 }
 header .hid {
   display: none;
@@ -91,6 +93,26 @@ footer .fa-solid {
 }
 .btn:hover {
   opacity: 0.8;
+}
+
+@keyframes demar {
+  from {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(2) translateY(200px);
+    background: #FF79DA;
+  }
+  60% {
+    transform: scale(2) translateY(200px) rotate(1turn);
+    background: #9356DC;
+  }
+  to {
+    transform: scale(1);
+  }
+}
+h1 {
+  animation: demar 3s ease-in-out;
 }
 
 .reserv {
