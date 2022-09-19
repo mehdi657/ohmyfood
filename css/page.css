@@ -320,6 +320,16 @@ footer .fa-solid {
     height: 500px;
     background-size: 100% 500px;
   }
+  .menus {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .menus .plat {
+    align-items: center;
+    width: 31%;
+  }
 }
 @media screen and (min-width: 1196px) {
   .palette, .note, .française, .delice {
