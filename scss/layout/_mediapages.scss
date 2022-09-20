@@ -1,8 +1,12 @@
+@media screen and (max-width: 900px) {
+    .palette, .note, .française, .delice{
+        @include taile-photo(100%,350px)
+    }
+}
+
 @media screen and (min-width: 900px) {
     .palette, .note, .française, .delice{
-        width: 100%;
-        height: 500px;
-        background-size: 100% 500px;
+        @include taile-photo(100%,500px)
     }
     .menus{
         @include flex(flex, row, wrap, center, center);
@@ -10,13 +14,14 @@
             align-items: center;
             width: 31%;
         }
+        h4::after{
+            left: 42%;
+        }
     }
 }
 
 @media screen and (min-width: 1196px) {
     .palette, .note, .française, .delice{
-        width: 100%;
-        height: 600px;
-        background-size: 100% 600px;
+        @include taile-photo(100%,600px)
     }
 }
