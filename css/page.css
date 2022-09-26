@@ -273,10 +273,10 @@ footer .fa-solid {
     transform: translate(0);
   }
 }
-.plat aside {
+.plat .plat1 {
   animation: deplacement 500ms ease-in-out;
 }
-.plat aside {
+.plat .plat2 {
   animation: deplacement 600ms ease-in-out 100ms;
 }
 .plat .plat3 {
