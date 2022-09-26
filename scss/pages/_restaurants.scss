@@ -1,8 +1,8 @@
 .restau{
     background-color: $greyc;
-    
+    height: 1650px;
     h2{
-        padding: 70px 0;
+        padding: 40px 0px 0px 0px;
         text-align: left;
         font-size: 2em;
         width: 90%;
@@ -11,7 +11,7 @@
     aside{
         width: 90%;
         height: 350px;
-        margin: 25px;
+        margin: 25px auto;
         border-radius: 25px;
         @extend %shadow;
     }
@@ -25,6 +25,7 @@
     }
     span{
         background-color: $color-tertiary;
+        color: green;
         padding: 5px;
         position: relative;
         bottom: 90%;

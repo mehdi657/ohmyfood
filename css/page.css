@@ -119,37 +119,41 @@ footer .fa-solid {
   width: 100%;
   padding-bottom: 80px;
 }
-.menus h2 {
-  font-family: "Shrikhand", cursive;
+.menus .nomrestau {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 90px;
   margin: 0;
-  font-size: 2.2em;
   position: relative;
   bottom: 70px;
   background-color: #f6f6f6;
   border-radius: 60px 60px 0 0;
 }
-.menus h2 p {
+.menus .nomrestau h2 {
+  font-family: "Shrikhand", cursive;
+  width: 90%;
   margin: 0;
+  font-size: 150%;
 }
-.menus h2 .coeurs {
+
+.coeurs {
   position: relative;
+  width: 10%;
 }
-.menus h2 .coeurs .fa-heart {
+.coeurs .fa-heart {
   position: absolute;
-  right: 0px;
-  bottom: 13px;
+  right: 15px;
+  bottom: -9px;
+  font-size: 100%;
 }
-.menus h2 .coeurs .fa-solid {
+.coeurs .fa-solid {
   color: white;
-  font-size: 29px;
-  right: 3px;
-  bottom: 17px;
+  font-size: 80%;
+  right: 17px;
+  bottom: -6px;
 }
 
 .plat {
@@ -311,11 +315,11 @@ footer .fa-solid {
   animation: rotat 700ms ease-in-out;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 1196px) {
   .palette, .note, .française, .delice {
     width: 100%;
-    height: 350px;
-    background-size: 100% 350px;
+    height: 600px;
+    background-size: 100% 600px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -323,6 +327,16 @@ footer .fa-solid {
     width: 100%;
     height: 500px;
     background-size: 100% 500px;
+  }
+  .nomrestau {
+    font-size: 220%;
+  }
+  .coeurs .fa-heart {
+    right: 45px;
+  }
+  .coeurs .fa-solid {
+    right: 48px;
+    bottom: -5px;
   }
   .menus {
     display: flex;
@@ -338,11 +352,38 @@ footer .fa-solid {
     left: 42%;
   }
 }
-@media screen and (min-width: 1196px) {
+@media screen and (max-width: 900px) {
   .palette, .note, .française, .delice {
     width: 100%;
-    height: 600px;
-    background-size: 100% 600px;
+    height: 350px;
+    background-size: 100% 350px;
+  }
+  .nomrestau {
+    font-size: 200%;
+  }
+  .coeurs .fa-heart {
+    right: 25px;
+  }
+  .coeurs .fa-solid {
+    right: 28px;
+    bottom: -5px;
+  }
+}
+@media screen and (max-width: 509px) {
+  .nomrestau {
+    font-size: 150%;
+  }
+  .coeurs .fa-heart {
+    right: 15px;
+  }
+  .coeurs .fa-solid {
+    right: 17px;
+    bottom: -6px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .nomrestau {
+    font-size: 110%;
   }
 }
 

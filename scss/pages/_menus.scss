@@ -3,36 +3,41 @@
     background-color: $greyc;
     width: 100%;
     padding-bottom: 80px;
-    h2{
-        font-family: 'Shrikhand', cursive;
-        @include flex(flex, row, nowrap, space-around, flex-end);
+    .nomrestau{
+        @include flex(flex, row, nowrap, center, center);
         width: 100%;
         height: 90px;
         margin: 0;
-        font-size: 2.2em;
         position: relative;
         bottom: 70px;
         background-color: $greyc;
         border-radius: 60px 60px 0 0;
-        p{
+        h2{
+            font-family: 'Shrikhand', cursive;
+            width: 90%;
             margin: 0;
-        }
-        .coeurs{
-            position: relative;
-            .fa-heart{
-                position: absolute;
-                right: 0px; 
-                bottom: 13px;           
-            }
-            .fa-solid{
-                color: white;
-                font-size: 29px;
-                right: 3px;
-                bottom: 17px;
-            }
+            font-size: 150%;
         }
     }
 }
+.coeurs{
+    position: relative;
+    width: 10%;
+    .fa-heart{
+        position: absolute;
+        right: 15px; 
+        bottom: -9px;      
+        font-size: 100%;     
+    }
+    .fa-solid{
+        color: white;
+        font-size: 80%;
+        right: 17px;
+        bottom: -6px;
+    }
+}
+    
+
 .plat{
     @include flex(flex, column, nowrap, space-between, flex-start);
     width: 85%;

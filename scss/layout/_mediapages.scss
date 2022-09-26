@@ -1,12 +1,24 @@
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 1196px) {
     .palette, .note, .française, .delice{
-        @include taile-photo(100%,350px)
+        @include taile-photo(100%,600px)
     }
 }
 
 @media screen and (min-width: 900px) {
     .palette, .note, .française, .delice{
         @include taile-photo(100%,500px)
+    }
+    .nomrestau{
+        font-size: 220%;
+    }
+    .coeurs{
+        .fa-heart{
+            right: 45px;  
+        }
+        .fa-solid{
+            right: 48px;
+            bottom: -5px;
+        }
     }
     .menus{
         @include flex(flex, row, wrap, center, center);
@@ -20,8 +32,41 @@
     }
 }
 
-@media screen and (min-width: 1196px) {
+@media screen and (max-width: 900px) {
     .palette, .note, .française, .delice{
-        @include taile-photo(100%,600px)
+        @include taile-photo(100%,350px)
+    }
+    .nomrestau{
+        font-size: 200%;
+    }
+    .coeurs{
+        .fa-heart{
+            right: 25px;  
+        }
+        .fa-solid{
+            right: 28px;
+            bottom: -5px;
+        }
+    }
+}
+
+@media screen and (max-width: 509px) {
+    .nomrestau{
+        font-size: 150%;
+    }
+    .coeurs{
+        .fa-heart{
+            right: 15px;  
+        }
+        .fa-solid{
+            right: 17px;
+            bottom: -6px;
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .nomrestau{
+        font-size: 110%;
     }
 }
